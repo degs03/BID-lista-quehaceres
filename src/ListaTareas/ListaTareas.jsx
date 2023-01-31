@@ -9,7 +9,7 @@ const ListaTareas = () => {
     const handleNewChore = (e) => {
         e.preventDefault();
         let aux = [...chores];
-        aux.push=({name: newChore, status:false});
+        aux.push({name: newChore, status:false});
         setChores([...aux]);
         console.log("Chores", aux);
         setNewChores("");
